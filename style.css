@@ -1,0 +1,53 @@
+body,html {
+    background-color: rgb(13, 56, 131);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    padding:10px;
+    position: relative;
+    height: 40px;
+    color: beige;
+   
+}
+
+header::before {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(42, 70, 139);
+    height: 1px;
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.box {
+    margin: 10px;
+    width: 400px;
+    height: 100px;
+    font-size: 50px;
+    font-family: "Lato";
+}
+
+button:hover {
+    background-color: rgb(96, 177, 177);
+}
+
+
+#add {
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-family: "Lato";
+}

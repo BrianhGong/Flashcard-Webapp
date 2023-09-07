@@ -59,3 +59,36 @@ button:hover {
     color:aqua;
     
 }
+
+
+#flashcardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 260px;
+    color:beige;
+    font-size: 35px;
+    padding:50px;
+    
+}
+
+#definition {
+    margin: 300px;
+}
+
+
+.flashcardButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#showAnswer {
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    background-color: gray;
+    
+}

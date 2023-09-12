@@ -33,7 +33,7 @@ let currentFlashcard;
 function getRandomFlashcard() {
     let tempflashcards = flashcards.filter(card => card.box == selectedBox);
     
-    // Check if the selectedBox is 0 (all), and if so, use all flashcards
+    
     if (selectedBox === "all"  || tempflashcards.length) {
         tempflashcards = flashcards;
     }
@@ -275,6 +275,16 @@ var backup =
     { question: "음식점", answer: "Dining Place", box: 1 },
     { question: "메뉴", answer: "Menu", box: 1 },
     { question: "주문", answer: "Order", box: 1 },
-    { question: "음식 배달", answer: "Food Delivery", box: 1 }
+    { question: "음식 배달", answer: "Food Delivery", box: 1}
+    { question: "농구", answer: "Basketball", box: 1 },
+    { question: "야구", answer: "Baseball", box: 1 },
+    { question: "테니스", answer: "Tennis", box: 1 },
+    { question: "골프", answer: "Golf", box: 1 },
+    { question: "수영", answer: "Swimming", box: 1 },
+    { question: "자전거", answer: "Biking", box: 1 },
+    { question: "등산", answer: "Hiking", box: 1 },
+    { question: "스키", answer: "Skiing", box: 1 },
+    { question: "체조", answer: "Gymnastics", box: 1 },
+    { question: "헬스", answer: "Fitness", box: 1 }
     
 ];

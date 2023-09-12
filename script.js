@@ -264,6 +264,17 @@ var backup =
     { question: "놀다", answer: "Play", box: 1 },
     { question: "파티", answer: "Party", box: 1 },
     { question: "영화관", answer: "Movie theater", box: 1 },
-    { question: "연습", answer: "Practice", box: 1}
+    { question: "연습", answer: "Practice", box: 1},
+    { question: "시", answer: "Poem", box: 1 },
+    { question: "공예", answer: "Crafts", box: 1 },
+    { question: "디자인", answer: "Design", box: 1 },
+    { question: "건축", answer: "Architecture", box: 1 },
+    { question: "음식", answer: "Food", box: 1 },
+    { question: "요리", answer: "Cooking", box: 1 },
+    { question: "식당", answer: "Restaurant", box: 1 },
+    { question: "음식점", answer: "Dining Place", box: 1 },
+    { question: "메뉴", answer: "Menu", box: 1 },
+    { question: "주문", answer: "Order", box: 1 },
+    { question: "음식 배달", answer: "Food Delivery", box: 1 }
     
 ];

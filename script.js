@@ -34,7 +34,7 @@ function getRandomFlashcard() {
     let tempflashcards = flashcards.filter(card => card.box == selectedBox);
     
     // Check if the selectedBox is 0 (all), and if so, use all flashcards
-    if (selectedBox === "all"  || tempflashcards.length == 0) {
+    if (selectedBox === "all"  || tempflashcards.length) {
         tempflashcards = flashcards;
     }
     

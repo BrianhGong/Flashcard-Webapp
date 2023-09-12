@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flashcard Studying</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="flashcard.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,14 +13,16 @@
         <a href="index.html" id="homeLink">Home</a>
     </header>
     <div id="flashcardContainer">
-        <p id="term">Term</p>
+        <p id="term"></p>
 
-        <p id="definition">Definition</p>
+        <p id="definition"></p>
     </div>
 
     <div class="flashcardButton">
+        <p id="flashcardBoxNumber"></p>
         <button id="showAnswer">Show Answer</button>
-        
+        <button id="know">Know</button>
+        <button id="dontknow">Don't Know</button>
     </div>
 </body>
 </html>

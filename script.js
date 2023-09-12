@@ -2,6 +2,13 @@
 
 const storedFlashcards = localStorage.getItem('flashcards');
 const flashcards = storedFlashcards ? JSON.parse(storedFlashcards) : backup;
+const boxSelect = document.getElementById("boxesSelector");
+let selectedBox = "all";
+boxSelect.addEventListener("change", () => {
+    selectedBox = boxSelect.value;
+    start();
+    
+});
 
 function moveFlashcardToNextBox(flashcard) {
     flashcard.box = Math.min(5, flashcard.box + 1);
@@ -24,8 +31,18 @@ const dontknowButton = document.querySelector("#dontknow");
 let currentFlashcard;
 
 function getRandomFlashcard() {
-    const randomIndex = Math.floor(Math.random() * flashcards.length);
-    currentFlashcard = flashcards[randomIndex]
+    let tempflashcards = flashcards.filter(card => card.box == selectedBox);
+    
+    // Check if the selectedBox is 0 (all), and if so, use all flashcards
+    if (selectedBox === "all"  || tempflashcards.length == 0) {
+        tempflashcards = flashcards;
+    }
+    
+
+    const randomIndex = Math.floor(Math.random() * tempflashcards.length);
+    currentFlashcard = tempflashcards[randomIndex];
+    displayFlashcard();
+    
     
 }
 

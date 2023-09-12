@@ -113,3 +113,10 @@ button:hover {
     font-size: 40px;
     color: rgb(169, 28, 194);
 }
+
+#boxesSelector {
+    width: 15vh;
+    height:auto;
+    font-size: 5vh;
+    background-color: yellow;
+}

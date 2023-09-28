@@ -1,12 +1,10 @@
-
-
-
 const storedFlashcards = localStorage.getItem('flashcards');
 const flashcards = storedFlashcards ? JSON.parse(storedFlashcards) : backup;
 const boxSelect = document.getElementById("boxesSelector");
 let selectedBox = "all";
 boxSelect.addEventListener("change", () => {
     selectedBox = boxSelect.value;
+    console.log(selectedBox);
     start();
     
 });
@@ -32,7 +30,7 @@ let currentFlashcard;
 
 function getRandomFlashcard() {
     let tempflashcards = flashcards.filter(card => card.box == selectedBox);
-    if (selectedBox === "all"  || tempflashcards.length) {
+    if (selectedBox === "all"  || tempflashcards.length == 0) {
         tempflashcards = flashcards;
     }
     const randomIndex = Math.floor(Math.random() * tempflashcards.length);
